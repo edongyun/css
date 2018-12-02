@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      ul li{color:red;} /* ui의 자식인 li에 적용되는 스타일 */
+      #lecture>li{border:1px solid red;}  /* id가 lecture인 태그의 자식인 li 태그에 적용되는 스타일 */
+      ul,ol{background-color:powderblue;}  /* ul태그와 ol태그에 배경색을 주는 스타일 */
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <ol id="lecture">
+      <li>HTML</li>
+      <li>CSS
+        <ol>
+          <li>selector</li>
+          <li>declaration</li>
+        </ol>
+      </li>
+      <li>JavaScript</li>
+    </ol>
+  </body>
+</html>

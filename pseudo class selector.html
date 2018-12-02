@@ -3,11 +3,18 @@
   <head>
     <meta charset="utf-8">
     <style>
-      a:active{color:green;}
+      /* 같은 스타일은 아랫쪽이 우선권을 같는다. */
+      a:link{color:black;}  /*방문하지 않은 링크*/
+      a:hover{color:yellow;} /*링크에 마우스를 올렸을 때 노락색이 된다.*/
+      a:active{color:green;} /*링크를 클릭하고 있을 때 초록색이 된다.*/
+      a:visited{color:red;}  /*방문한 링크색*/
+      a:focus{color:white;}  
+      input:focus{background-color:black; color:white;}
     </style>
   </head>
   <body>
     <a href="https://opentutorials.org">방문함</a>
     <a href="https://a.a">방문안함</a>
+    <input type="text" name="" value="">
   </body>
 </html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- 모바일 기기에서도 제대로 동작하도록 하는 meta 태그 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       @media (max-width:600px){  /* 600px 이하일 때 배경색이 green이 된다. */
@@ -9,7 +10,7 @@
       @media (max-width:500px){  /* 500px 이하일 때 배경색이 red가 된다. */
         body{background-color: red;}
       }
-      @media(min-width: 601px){
+      @media(min-width: 601px){  /* 601px 이상일 때 배경색이 blue가 된다.*/
         body{background-color: blue;}
       }
     </style>
